@@ -61,16 +61,16 @@
   </developers>
 
   <distributionManagement>
-    <snapshotRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Sonatype OSS</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
     <repository>
-      <id>sonatype-nexus-staging</id>
-      <name>Nexus Release Repository</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <id>nexus-releases</id>
+      <name>nexus releases</name>
+      <url>http://192.168.100.110:8081/repository/maven-releases/</url>
     </repository>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <name>nexus snapshots</name>
+      <url>http://192.168.100.110:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <repositories>
@@ -88,7 +88,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <hadoop.current.version>2.6.4</hadoop.current.version>
+    <hadoop.current.version>2.7.3</hadoop.current.version>
     <hadoop.old.version>1.0.4</hadoop.old.version>
   </properties>
 
