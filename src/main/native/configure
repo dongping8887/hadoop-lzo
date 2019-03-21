@@ -11397,7 +11397,7 @@ fi
 $as_echo "$ac_cv_libname_lzo2" >&6; }
 
 cat >>confdefs.h <<_ACEOF
-#define HADOOP_LZO_LIBRARY "/usr/local/lib/liblzo2.a"
+#define HADOOP_LZO_LIBRARY ${ac_cv_libname_lzo2}
 _ACEOF
 
 
